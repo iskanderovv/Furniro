@@ -35,7 +35,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 30px 10px;
     width: 100%;
 }
 
@@ -247,7 +247,7 @@
 /* ROOMS */
 .rooms {
     background: #FCF8F3;
-    padding: 44px 0;
+    padding: 44px 0 0 200px;
 }
 
 .rooms__wrapper {
@@ -255,16 +255,11 @@
     align-items: center;
     justify-content: center;
     gap: 42px;
-}
-
-.rooms__wrapper.container {
-    margin-right: 30px;
-    padding: 0;
-    margin-left: auto;
+    width: 100%;
 }
 
 .rooms__content {
-    min-width: 422px;
+    max-width: 422px;
     width: 100%;
 }
 
@@ -347,8 +342,8 @@
     justify-content: center;
     background: white;
     color: var(--orangeColor);
-    position: absolute;
-    bottom: 277px;
+    position: relative;
+    bottom: 237px;
     border-radius: 50%;
     right: 51px;
     cursor: pointer;
