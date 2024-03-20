@@ -1,0 +1,477 @@
+:root {
+    --fontPoppins: "Poppins", sans-serif;
+    --orangeColor: #B88E2F;
+    --blackColor: #3A3A3A;
+    --blackSecondary: #333333;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--fontPoppins);
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1286px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* NAV */
+.nav__wrapper {
+    background: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    gap: 0px 75px;
+}
+
+.list__item>a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000000;
+}
+
+.nav__icons {
+    display: flex;
+    gap: 0px 47px;
+}
+
+/* HERO */
+.hero {
+    background: url("../imgs/scandinavian-interior-mockup-wall-decal-background\ 1.png") center center / cover;
+    width: 100%;
+    height: 716.83px;
+    margin-top: 107.4px;
+}
+
+.hero__item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.hero__content {
+    flex-basis: 643px;
+    background: #FFF3E3;
+    border-radius: 10px;
+    padding: 62px 43px 37px 39px;
+}
+
+.hero__subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 3px;
+    color: var(--blackSecondary);
+}
+
+.hero__title {
+    max-width: 469px;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 65px;
+    color: var(--orangeColor);
+    padding: 4px 0px 17px 0;
+}
+
+.hero__text {
+    max-width: 546px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--blackSecondary);
+}
+
+.hero__btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
+    padding: 25px 72px;
+    background: var(--orangeColor);
+    margin-top: 46px;
+}
+
+/* RANGE */
+.range {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.range__title {
+    padding-top: 56px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--blackSecondary);
+}
+
+.range__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #666666;
+}
+
+.range__cards {
+    padding: 62px 0 56px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.range__card {
+    flex-basis: 381px;
+}
+
+.range-card__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    padding-top: 30px;
+}
+
+/* PRODUCTS */
+.products {
+    text-align: center;
+}
+
+.products__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    color: var(--blackColor);
+}
+
+.products__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    margin: 32px 0;
+}
+
+.products__card {
+    position: relative;
+    flex-basis: 285px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.prodicts__discount {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    background: #E97171;
+    font-size: 16px;
+    font-weight: 500;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+}
+
+.new {
+    background: #2EC1AC;
+}
+
+.products-card__body {
+    padding: 16px 16px 30px 16px;
+    background: #F4F5F7;
+}
+
+.products-card__title {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--blackColor);
+}
+
+.products-card__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #898989;
+    padding: 8px 0;
+}
+
+.products-card__price {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--blackColor);
+    padding-right: 16px;
+}
+
+.products-card__discount {
+    text-decoration: line-through;
+    font-size: 16px;
+    font-weight: 400;
+    color: #B0B0B0;
+}
+
+.products__link {
+    display: inline-block;
+    background: white;
+    padding: 12px 82px;
+    color: var(--orangeColor);
+    border: 1px solid var(--orangeColor);
+    margin-bottom: 69px;
+}
+
+/* ROOMS */
+.rooms {
+    background: #FCF8F3;
+    padding: 44px 0;
+}
+
+.rooms__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+}
+
+.rooms__wrapper.container {
+    margin-right: 30px;
+    padding: 0;
+    margin-left: auto;
+}
+
+.rooms__content {
+    min-width: 422px;
+    width: 100%;
+}
+
+.rooms-content__title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--blackColor);
+}
+
+.rooms-content__text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #616161;
+    max-width: 368px;
+    padding: 7px 0px 25px 0;
+}
+
+.rooms-content__link {
+    display: inline-block;
+    padding: 12px 36px;
+    background: var(--orangeColor);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.rooms__items {
+    display: flex;
+    gap: 24px;
+    position: relative;
+}
+
+.rooms-items-img__content {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.rooms-items-img__content>div {
+    background: #FFFFFFB8;
+    padding: 32px 17px 32px 32px;
+}
+
+.rooms-items-img__content span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #616161;
+}
+
+.rooms-items-img__content h4 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    color: var(--blackColor);
+}
+
+.rooms-items-img__content>.bi-arrow-right {
+    background: var(--orangeColor);
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+}
+
+.rooms-items__img>.bi-chevron-right {
+    box-shadow: 0px 4px 14px 1px #00000029;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: var(--orangeColor);
+    position: absolute;
+    bottom: 277px;
+    border-radius: 50%;
+    right: 51px;
+    cursor: pointer;
+}
+
+.rooms-items__img {
+    flex-basis: 404px;
+}
+
+.rooms-items-img__indicator {
+    padding-top: 40px;
+}
+
+/* FURNITURE */
+.furniture {
+    margin: 67px 0px 268px 0;
+    text-align: center;
+}
+
+.furniture>.container {
+    max-width: 1795px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.furniture__text {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #616161;
+}
+
+.furniture__title {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--blackColor);
+}
+
+.furniture__imgs {
+    margin-top: 43px;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+/* FOOTER */
+.footer {
+    padding: 48px 0;
+    border-top: 1px solid #0000002B;
+    border-bottom: 1px solid #0000002B;
+    display: flex;
+}
+
+.footer__content {
+    flex: 1;
+}
+
+.footer-items__location {
+    margin-top: 56px;
+}
+
+.footer-items__location,
+.footer-items__location+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #9F9F9F;
+    max-width: 285px;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+    margin-right: 136px;
+}
+
+.footer__items>h6 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #9F9F9F;
+    padding-bottom: calc(55px - 46px);
+}
+
+.footer-lists__items a {
+    display: block;
+    margin-top: 46px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.footer__form {
+    padding-top: 46px;
+}
+
+.footer__form>input {
+    padding: 3px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+}
+
+.footer__form>input ::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9F9F9F;
+}
+
+.footer__form>button {
+    border: none;
+    border-bottom: 1px solid #000000;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 3px;
+    background: transparent;
+    margin-left: 11px;
+    cursor: pointer;
+}
+
+.footer__copyright {
+    padding: 35px 0px 28px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
